@@ -1,0 +1,30 @@
+<<html>
+    <head>
+        <title>ArrayMethods</title>
+        <script type="text/javascript">
+            var alphabets = new Array("J", "A", "X", "E", "M");
+            Array.prototype.displayItems=function(){
+                for (i=0;i<this.length;i++){
+                    document.write(this[i] + "<br />");
+                }
+            }	
+            document.write("alphabets array<br />");
+            alphabets.displayItems();
+            document.write("<br />The number of items in alhabets array is " + alphabets.length + "<br />");
+            document.write("<br />The SORTED alphabets array<br />");
+            alphabets.sort();
+            alphabets.displayItems();
+            document.write("<br />The REVERSED alphabets array<br />");
+            alphabets.reverse();
+            alphabets.displayItems();
+            document.write("<br />THE alphabets array after REMOVING the LAST item<br />");
+            alphabets.pop();
+            alphabets.displayItems();
+            document.write("<br />THE alphabetsnide array after PUSH<br />");
+            alphabets.push("New Stuff");
+            alphabets.displayItems();
+        </script>
+    </head>
+    <body>
+    </body>
+    </html>
